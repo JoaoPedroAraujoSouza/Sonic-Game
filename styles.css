@@ -1,0 +1,53 @@
+/* Importando a fonte retrô */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Estilização geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Tela inicial */
+.tela-inicial {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #0000FF, #87CEEB);
+    position: relative;
+}
+
+/* Estilo do título estilo Sonic retrô */
+.titulo-sonic {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 4px 4px 0px #ffcc00, 8px 8px 0px #ff0000; /* Efeito retrô */
+    margin-bottom: 50px;
+}
+
+/* Estilização do botão Play */
+#btnStart {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    padding: 15px 40px;
+    background: #FFD700; /* Amarelo vibrante */
+    color: #000;
+    border: 4px solid #000;
+    box-shadow: 4px 4px 0 #000;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+}
+
+/* Efeito quando o botão é pressionado */
+#btnStart:active {
+    box-shadow: 2px 2px 0 #000;
+    transform: translate(2px, 2px);
+}
+
+
