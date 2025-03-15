@@ -25,7 +25,7 @@ const loop = setInterval(() => {
     .bottom.replace("px", "");
 
   // Verifica se houve colisão entre Sonic e Eggman
-  if (eggmanPosition < 450 && eggmanPosition > 0 && sonicPosition < 220) {
+  if (eggmanPosition < window.innerWidth * 0.25 && eggmanPosition > 0 && sonicPosition < window.innerHeight * 0.25) {
     // Para a animação do Eggman
     eggman.style.animation = "none";
     eggman.style.left = `${eggmanPosition}px`;

@@ -85,9 +85,9 @@ html, body {
 
 /* Estilo do Sonic */
 .sonic {
-    bottom: 110px;
+    bottom: 20%;
     position: absolute;
-    width: 150px;
+    width: 10vw;
     left: 20%;
 }
 
@@ -98,9 +98,9 @@ html, body {
 
 /* Estilo do Eggman */
 .eggman {
-    width: 250px;
+    width: 15vw;
     position: absolute;
-    bottom: 110px;
+    bottom: 20%;
     right: 0;
     animation: 2s eggman_animation infinite linear;
 }
@@ -114,7 +114,7 @@ html, body {
 /* Animação do Eggman */
 @keyframes eggman_animation {
     0% {
-        right: -250px;
+        right: -15vw;
     }
     100% {
         right: 100%;
@@ -124,15 +124,26 @@ html, body {
 /* Animação do Sonic */
 @keyframes sonic_animation {
     0% {
-        bottom: 110px;
+        bottom: 20%;
     }
     25% {
-        bottom: 250px;
+        bottom: 35%;
     }
     75% {
-        bottom: 250px;
+        bottom: 35%;
     }
     100% {
-        bottom: 110px;
+        bottom: 20%;
+    }
+}
+
+/* Media Queries para diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    .sonic {
+        width: 20vw;
+    }
+
+    .eggman {
+        width: 25vw;
     }
 }
