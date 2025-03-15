@@ -1,7 +1,13 @@
 // Seleciona os elementos do DOM
 const sonic = document.querySelector(".sonic");
 const eggman = document.querySelector(".eggman");
-const fundo = document.querySelector(".fundo");
+const background = document.querySelector(".background");
+const scoreElement = document.getElementById("score");
+const highscoreElement = document.getElementById("highscore");
+
+let score = 0;
+let highscore = localStorage.getItem("highscore") || 0;
+highscoreElement.textContent = `Record: ${highscore}`;
 
 // Função para fazer o Sonic pular
 const jump = () => {
@@ -25,7 +31,7 @@ const loop = setInterval(() => {
     .bottom.replace("px", "");
 
   // Verifica se houve colisão entre Sonic e Eggman
-  if (eggmanPosition < window.innerWidth * 0.25 && eggmanPosition > 0 && sonicPosition < window.innerHeight * 0.25) {
+  if (eggmanPosition < window.innerWidth * 0.27 && eggmanPosition > 0 && sonicPosition < window.innerHeight * 0.25) {
     // Para a animação do Eggman
     eggman.style.animation = "none";
     eggman.style.left = `${eggmanPosition}px`;
@@ -36,7 +42,27 @@ const loop = setInterval(() => {
     sonic.style.width = "240px";
 
     // Muda a imagem de fundo para a de game over
-    fundo.src = "assets/images/game-over.png.png";
+    background.src = "assets/images/game-over.png.png";
+
+    // Atualiza o recorde se o score atual for maior
+    if (score > highscore) {
+      highscore = score;
+      localStorage.setItem("highscore", highscore);
+      highscoreElement.textContent = `Record: ${highscore}`; 
+    }
+
+    // Para o loop do jogo
+    clearInterval(loop);
+  } else if (eggmanPosition < 0) {
+    // Incrementa o contador de pontos quando o Eggman sai da tela
+    score++;
+    scoreElement.textContent = `Score: ${score}`;
+    // Reinicia a posição do Eggman para continuar o jogo
+    eggman.style.right = '-15vw';
+    eggman.style.animation = 'none';
+    setTimeout(() => {
+      eggman.style.animation = '2s eggman_animation infinite linear';
+    }, 10);
   }
 }, 10);
 
