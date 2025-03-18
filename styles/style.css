@@ -1,7 +1,5 @@
-/* Importando a fonte retrô */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* Estilização geral */
 html, body {
     margin: 0;
     padding: 0;
@@ -12,12 +10,10 @@ html, body {
     text-align: center;
 }
 
-/* Classe hidden para ocultar elementos */
 .hidden {
     display: none;
 }
 
-/* Tela inicial */
 .home-screen {
     width: 100vw;
     height: 100vh;
@@ -28,13 +24,11 @@ html, body {
     position: relative;
 }
 
-/* Estilo para o logo animado */
 .sonic-logo {
     width: 25vw;
     margin-bottom: 50px;
 }
 
-/* Estilização do botão Play */
 #btnStart {
     font-family: 'Press Start 2P', cursive;
     font-size: 1rem;
@@ -67,7 +61,6 @@ html, body {
     margin: 0;
 }
 
-/* Container principal do jogo */
 .gameplay {
     width: 100vw;
     height: 100vh;
@@ -75,7 +68,6 @@ html, body {
     overflow: hidden;
 }
 
-/* Estilo do Sonic */
 .sonic {
     bottom: 20%;
     position: absolute;
@@ -83,12 +75,10 @@ html, body {
     left: 20%;
 }
 
-/* Animação de pulo do Sonic */
 .jump {
     animation: 1s sonic_animation infinite ease-out;
 }
 
-/* Estilo do Eggman */
 .eggman {
     width: 15vw;
     position: absolute;
@@ -97,13 +87,11 @@ html, body {
     animation: 2s eggman_animation infinite linear;
 }
 
-/* Estilo do fundo */
 .background {
     width: 100%;
     height: 100%;
 }
 
-/* Estilo do contador de pontos */
 .scoreboard {
     position: absolute;
     top: 10px;
@@ -117,7 +105,6 @@ html, body {
     gap: 20px;
 }
 
-/* Animação do Eggman */
 @keyframes eggman_animation {
     0% {
         right: -15vw;
@@ -127,7 +114,6 @@ html, body {
     }
 }
 
-/* Animação do Sonic */
 @keyframes sonic_animation {
     0% {
         bottom: 20%;
@@ -143,7 +129,6 @@ html, body {
     }
 }
 
-/* Media Queries para diferentes tamanhos de tela */
 @media (max-width: 768px) {
     .sonic {
         width: 20vw;
@@ -154,7 +139,6 @@ html, body {
     }
 }
 
-/* Estilo para a tela de Game Over */
 .game-over-screen {
   position: fixed;
   top: 0;
@@ -169,7 +153,6 @@ html, body {
   z-index: 1000;
 }
 
-/* Estilo para o texto de Game Over */
 .game-over-text {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
@@ -177,7 +160,6 @@ html, body {
   margin-bottom: 20px;
 }
 
-/* Estilo para o botão de reiniciar */
 .restart-button {
   font-family: 'Press Start 2P', cursive;
   font-size: 1rem;
