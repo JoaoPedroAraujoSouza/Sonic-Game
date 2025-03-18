@@ -26,18 +26,15 @@ Bem-vindo ao **Sonic Run**! Este é um jogo simples inspirado no jogo do dinossa
 
 A estrutura do projeto é a seguinte:
 
-Desafio-Seed-a-Bit/
-│
-├── index.html
-├── game.html
-├── styles/
-│   └── style.css
-├── scripts/
-│   ├── script.js
-│   └── gameScript.js
-└── assets/
-    ├── images/
-    └── sounds/
+| Caminho                | Descrição                                                         |
+|------------------------|-------------------------------------------------------------------|
+| `index.html`           | Página inicial do jogo com o botão "Play".                        |
+| `game.html`            | Página do jogo onde o Sonic corre e pula os obstáculos.           |
+| `styles/style.css`     | Arquivo de estilos CSS para a aparência do jogo.                  |
+| `scripts/script.js`    | Script para iniciar o jogo e redirecionar para a página do jogo.  |
+| `scripts/gameScript.js`| Script principal do jogo que controla a lógica de pulo e colisão. |
+| `assets/images/`       | Pasta contendo as imagens usadas no jogo.                         |
+| `assets/sounds/`       | Pasta contendo os sons usados no jogo.                            |
 
 ### Descrição dos Arquivos
 
