@@ -1,66 +1,68 @@
 # Sonic Run
 
-Bem-vindo ao **Sonic Run**! Este é um jogo simples inspirado no jogo do dinossauro do Chrome, onde você controla o Sonic para pular obstáculos e evitar colisões com o Eggman.
+Welcome to **Sonic Run**! This is a simple game inspired by the Chrome dinosaur game, where you control Sonic to jump over obstacles and avoid colliding with Eggman.
 
-## Índice
+## Table of Contents
 
-- [Sobre o Jogo](#sobre-o-jogo)
-- [Como Jogar](#como-jogar)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Configuração do Ambiente](#configuração-do-ambiente)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
+- [About the Game](#about-the-game)
+- [How to Play](#how-to-play)
+- [Project Structure](#project-structure)
+- [Environment Setup](#environment-setup)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Sobre o Jogo
+## About the Game
 
-**Sonic Run** é um jogo de corrida infinita onde o jogador controla o Sonic. O objetivo é evitar colisões com o Eggman pulando sobre ele. O jogo termina quando o Sonic colide com o Eggman.
+**Sonic Run** is an endless runner game where the player controls Sonic. The goal is to avoid colliding with Eggman by jumping over him. The game ends when Sonic collides with Eggman.
 
-## Como Jogar
+## How to Play
 
-1. Abra o arquivo `index.html` em um navegador.
-2. Clique no botão "Play" para iniciar o jogo.
-3. Use a tecla de espaço para fazer o Sonic pular e evitar colisões com o Eggman.
+1. Open the `index.html` file in a browser.
+2. Click the "Play" button to start the game.
+3. Press the spacebar to make Sonic jump and avoid colliding with Eggman.
 
-## Estrutura do Projeto
+## Project Structure
 
-A estrutura do projeto é a seguinte:
+The project structure is as follows:
 
-| Caminho                | Descrição                                                         |
-|------------------------|-------------------------------------------------------------------|
-| `index.html`           | Página inicial do jogo com o botão "Play".                        |
-| `game.html`            | Página do jogo onde o Sonic corre e pula os obstáculos.           |
-| `styles/style.css`     | Arquivo de estilos CSS para a aparência do jogo.                  |
-| `scripts/script.js`    | Script para iniciar o jogo e redirecionar para a página do jogo.  |
-| `scripts/gameScript.js`| Script principal do jogo que controla a lógica de pulo e colisão. |
-| `assets/images/`       | Pasta contendo as imagens usadas no jogo.                         |
-| `assets/sounds/`       | Pasta contendo os sons usados no jogo.                            |
+| Path                    | Description                                                        |
+|-------------------------|--------------------------------------------------------------------|
+| `index.html`            | Game's main page with the "Play" button.                          |
+| `game.html`             | Game screen where Sonic runs and jumps over obstacles.            |
+| `styles/style.css`      | CSS file for the game's appearance.                               |
+| `scripts/script.js`     | Script to start the game and redirect to the game page.           |
+| `scripts/gameScript.js` | Main game script controlling jump and collision logic.            |
+| `assets/images/`        | Folder containing the images used in the game.                    |
+| `assets/sounds/`        | Folder containing the sounds used in the game.                    |
 
-### Descrição dos Arquivos
+### File Descriptions
 
-- **index.html**: Página inicial do jogo com o botão "Play".
-- **game.html**: Página do jogo onde o Sonic corre e pula os obstáculos.
-- **styles/style.css**: Arquivo de estilos CSS para a aparência do jogo.
-- **scripts/script.js**: Script para iniciar o jogo e redirecionar para a página do jogo.
-- **scripts/gameScript.js**: Script principal do jogo que controla a lógica de pulo e colisão.
-- **assets/images/**: Pasta contendo as imagens usadas no jogo.
+- **index.html**: Game's main page with the "Play" button.
+- **game.html**: Game screen where Sonic runs and jumps over obstacles.
+- **styles/style.css**: CSS file for the game's appearance.
+- **scripts/script.js**: Script to start the game and redirect to the game page.
+- **scripts/gameScript.js**: Main game script controlling jump and collision logic.
+- **assets/images/**: Folder containing the images used in the game.
 
-Para configurar o ambiente e rodar o jogo localmente, siga os passos abaixo:
+## Environment Setup
 
-1. Clone o repositório:
+To set up the environment and run the game locally, follow these steps:
+
+1. Clone the repository:
     ```bash
     git clone https://github.com/JoaoPedroAraujoSouza/Desafio-Seed-a-Bit.git
     ```
 
-2. Navegue até o diretório do projeto:
+2. Navigate to the project directory:
     ```bash
     cd Desafio-Seed-a-Bit
     ```
 
-3. Abra o arquivo `index.html` em um navegador.
+3. Open the `index.html` file in a browser.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **HTML5**: Estrutura do jogo.
-- **CSS3**: Estilização do jogo.
-- **JavaScript**: Lógica do jogo.
+- **HTML5**: Game structure.
+- **CSS3**: Game styling.
+- **JavaScript**: Game logic.
